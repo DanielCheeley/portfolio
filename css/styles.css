@@ -11058,6 +11058,7 @@ small {
   text-shadow: 0px 8px 20px black;
 }
 .contact-subheading {
+  font-size: 1.5em !important;
   text-shadow: 0px 6px 10px black;
 }
 
@@ -11070,6 +11071,10 @@ small {
   border-radius: 30px;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.timeline-body {
+  font-size: 1.25em;
 }
 
 #submitButton {
