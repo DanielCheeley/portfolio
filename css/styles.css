@@ -2868,7 +2868,8 @@ textarea.form-control-lg {
   display: block;
   margin: 30px;
   justify-self: center;
-  width: 20%;
+  margin-top: 0;
+  width: 15%;
   height: 0 auto;
   border-radius: 50%;
   box-shadow: 0px 4px 10px black;
@@ -11053,6 +11054,24 @@ small {
   justify-self: center;
 }
 
+
+#masterCircleImg {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-60%);
+  width: clamp(170px, 35vw, 300px); /* responsive scaling */
+  border-radius: 50%;
+}
+
+
+.masterHeadContainer {
+  padding-top: 200px;
+}
+
+#masthead-subheading2 {
+  margin-top: 75px;
+}
 
 .contact-heading {
   text-shadow: 0px 8px 20px black;
