@@ -3809,6 +3809,7 @@ textarea.form-control-lg {
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
   color: var(--bs-navbar-active-color);
+  transform: translateY(-7px);/*sets y height of active link to offset and look better*/
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -11432,4 +11433,156 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.growRadiusI:hover {
+  animation-name: growRadiusI;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out; /* Controls the speed curve */
+  animation-fill-mode: forwards; /* Element stays at the end state */
+  border-width: 3px;
+}
+
+@keyframes growRadiusI {
+  0% {
+    transform: scale(1); 
+    background-image: linear-gradient(to bottom right,#f9ce34, #ee2a7b, #6228d7);
+  }
+  50% {
+    transform: scale(1.5);
+    background-image: linear-gradient(to bottom right,#f9ce34, #ee2a7b, #6228d7);
+    
+    
+  }
+  100% {
+    transform: scale(1.3);
+    background-image: linear-gradient(to bottom right,#f9ce34, #ee2a7b, #6228d7);
+  }
+}
+
+
+
+.growRadiusF:hover {
+  animation-name: growRadiusF;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out; /* Controls the speed curve */
+  animation-fill-mode: forwards; /* Element stays at the end state */
+  border-width: 3px;
+}
+@keyframes growRadiusF {
+  0% {
+    transform: scale(1); 
+    background-color: #1877F2;
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: #1877F2;
+    
+  }
+  100% {
+    transform: scale(1.3);
+    background-color: #1877F2;
+  }
+}
+
+
+
+.growRadiusL:hover {
+  animation-name: growRadiusL;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out; /* Controls the speed curve */
+  animation-fill-mode: forwards; /* Element stays at the end state */
+  border-width: 3px;
+}
+@keyframes growRadiusL {
+  0% {
+    transform: scale(1); 
+    background-color: #0072b1;
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: #0072b1;
+  }
+  100% {
+    transform: scale(1.3);
+    background-color: #0072b1;
+  }
+}
+
+
+/*.borderChange:hover {
+  animation-name: growBorder;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes growBorder {
+  0% {
+    padding: 0;
+  }
+  50% {
+    padding: 20px;
+  }
+  100% {
+    padding: 10px;
+  }
+} */
+
+/* set inital padding, define transition */
+.borderChange {
+  padding: 0;
+  transition: padding 0.3s ease-in-out;
+}
+
+/* padding to grow to on hover */
+.borderChange:hover {
+  padding: 10px;
+}
+
+
+.skillChange {
+  transition: transform 0.8s; /* Smooth transition for the rotation */
+}
+
+.skillChange:hover {
+  transform: rotate(360deg); /* Rotates the element a full circle on hover */
+}
+
+
+
+.navTransform {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navTransform:hover {
+  transform: translateY(-10px);
+}
+
+
+/*
+.growImageTop {
+  transition: transform 43s;
+}
+
+.growImageTop:hover {
+  transform: scale(2);
+}*/
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.growImageTop:hover {
+  animation: pulse 2s alternate infinite ease-in-out; /* Apply the 'pulse' animation */
 }
