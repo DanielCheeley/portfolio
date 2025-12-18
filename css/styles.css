@@ -11071,7 +11071,11 @@ small {
 }
 
 #masthead-subheading2 {
-  margin-top: 75px;
+  margin-top: 25px;
+}
+
+.resumeBtn {
+  padding: 10px 30px;
 }
 
 .contact-heading {
